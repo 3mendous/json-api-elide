@@ -1,0 +1,27 @@
+Get all entities - GET request to url/test
+
+Get specified entity - GET request to url/test/entityID
+
+Create new entity - POST request to url/test with body
+{
+  "data": {
+    "type": "test",
+    "attributes": {
+      "info": "entityInfo",
+      "name": "entityName",
+      "owner": "entityOwner"
+    }
+  }
+}
+
+Update entity - PATCH request to url/test/entityID with body (in our example attributes are - info, name, owner, so you can change all or one of it)
+{
+  "data": {
+    "id": entityID,
+    "attributes": {
+      "info": "newInfo"
+    }
+  }
+}
+
+Delete entity - DELETE request to url/test/entityID
